@@ -6,6 +6,7 @@ import GetStarted from "layouts/HomePage/GetStarted";
 import Guides from "layouts/HomePage/Guides";
 import FormAndTeam from "layouts/HomePage/FormAndTeam";
 import Faq from "layouts/HomePage/Faq";
+import Footer from "layouts/Footer";
 
 function HomePage() {
   return (
@@ -14,9 +15,10 @@ function HomePage() {
       <Hero />
       <About />
       <GetStarted />
-      <Guides />
+      {/* <Guides />
       <FormAndTeam />
       <Faq />
+      <Footer /> */}
     </div>
   );
 }

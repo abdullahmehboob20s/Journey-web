@@ -1,6 +1,8 @@
 import React from "react";
 import aboutPattren from "assets/images/about-pattren.png";
 import AboutCard from "components/AboutCard";
+import Title from "components/Title";
+import Subtitle from "components/Subtitle";
 
 function About() {
   return (
@@ -11,22 +13,22 @@ function About() {
         alt=""
       />
       <div className="container">
-        <header className="max-w-[645px] w-full text-center mx-auto mb-[82px]">
-          <h1 className="text-white text-center leading-[90px] tracking-[-2px] mb-[5px] font-bold text-[64px] ">
+        <header className="max-w-[645px] w-full text-center mx-auto mb-[50px] sm:mb-[82px]">
+          <Title className="text-white text-center tracking-[-2px] mb-[5px]">
             About The Journey
-          </h1>
+          </Title>
 
-          <p className="font-dm-sans text-center text-[22px] font-normal mb-16 text-white opacity-[.5]">
+          <Subtitle className="text-center text-white opacity-[.5]">
             BiLorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum
-          </p>
+          </Subtitle>
         </header>
 
-        <h1 className="text-white text-center font-bold text-[50px] mb-14 ">
+        <h1 className="text-white text-center font-bold text-[28px] md:text-[50px] mb-8 sm:mb-14 ">
           How its Work
         </h1>
 
-        <main className="grid grid-cols-[repeat(3,_250px)] justify-between gap-[2rem] max-w-[1050px] mx-auto">
+        <main className="grid grid-cols-1  lg:grid-cols-[repeat(3,_250px)] justify-between gap-[2rem] max-w-[1050px] mx-auto">
           <AboutCard
             title="Share your journey"
             desc="Lorem Ipsum is simply dummy text of the printing and typese "
