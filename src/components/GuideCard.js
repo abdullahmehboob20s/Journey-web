@@ -14,14 +14,13 @@ function GuideCard({ title, img }) {
 
   return (
     <div
-      className="bg-black pt-[30px] pb-[30px] xl:pb-[50px] px-[20px] text-center rounded-[14px] group relative"
+      className="bg-black pt-[30px] pb-[30px] xl:pb-[50px] px-[20px] text-center rounded-[14px] group relative overflow-hidden"
       // onMouseEnter={() => setIsOpen(true)}
       // onMouseLeave={() => setIsOpen(false)}
     >
       <div
-        className="absolute bottom-[105%] left-0 w-full bg-black rounded-xl p-4 opacity-0 pointer-events-none transition-all duration-[.3s] 
-      ease-[ease] group-hover:opacity-[1] "
-        // group-hover:shadow-[0_0_5px_rgba(255,255,255,0.3)]
+        className="absolute top-0 left-0 w-full h-full bg-black p-4 opacity-0 transition-all duration-[.4s] 
+      ease-[ease] group-hover:opacity-[1] flex items-center justify-center flex-col"
       >
         <p className="">Lorem ipsum dolor sit amet consectetur,</p>
       </div>
