@@ -14,19 +14,21 @@ function Accordion({ title, children }) {
   }, [isOpen]);
 
   return (
-    <div className="max-w-[689px] w-full mx-auto bg-[rgba(255,_255,_255,_0.1)] rounded-[18px]">
+    <div className="max-w-[689px] w-full mx-auto bg-[rgba(255,_255,_255,_0.1)] rounded-[6px] sm:rounded-[18px]">
       <button
-        className="py-[38px] px-[42px] flex items-center justify-between w-full"
+        className="py-[24px] sm:py-[30px] lg:py-[38px] px-[22px] sm:px-[36px] lg:px-[42px] flex items-center justify-between w-full space-x-[1rem]"
         onClick={() => setIsOpen((val) => !val)}
       >
-        <p className="font-merienda text-2xl text-white font-normal">{title}</p>
+        <p className="text-left font-merienda text-base sm:text-[18px] xl:text-2xl text-white font-normal">
+          {title}
+        </p>
 
         <span
           className={`${
             isOpen ? "rotate-[180deg]" : ""
-          } transition-all duration-[.3s] ease-[ease]`}
+          } transition-all duration-[.3s] ease-[ease] text-[28px] xl:text-[40px]`}
         >
-          <FiChevronDown size={40} color="white" />
+          <FiChevronDown color="white" />
         </span>
       </button>
 
@@ -34,7 +36,9 @@ function Accordion({ title, children }) {
         className="h-0 overflow-hidden transition-all duration-[.3s] ease-[ease]"
         ref={menuRef}
       >
-        <div className="py-[38px] px-[42px] pt-0 ">{children}</div>
+        <div className="py-[24px] sm:py-[30px] lg:py-[38px] px-[22px] sm:px-[36px] lg:px-[42px] pt-0 ">
+          {children}
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import Subtitle from "components/Subtitle";
 
 function About() {
   return (
-    <div className="py-[82px] relative">
+    <div className="py-[60px] md:py-[82px] relative">
       <img
         src={aboutPattren}
         className="absolute left-0 top-0 h-full object-cover z-[-2]"

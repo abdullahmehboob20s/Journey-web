@@ -20,16 +20,29 @@ import img17 from "assets/images/guide-img-17.svg";
 import img18 from "assets/images/guide-img-18.svg";
 import img19 from "assets/images/guide-img-19.svg";
 import img20 from "assets/images/guide-img-20.svg";
+import Title from "components/Title";
+import p1 from "assets/images/guide-pattren.svg";
+import p2 from "assets/images/p2.svg";
 
 function Guides() {
   return (
-    <div className="py-[100px]">
+    <div className="py-[60px] sm:py-[80px] lg:py-[100px] relative z-10">
+      <img
+        src={p1}
+        className="absolute w-full h-full object-cover top-0 left-0 z-[-3]"
+        alt=""
+      />
+      <img
+        src={p2}
+        className="absolute w-full  object-cover top-[50%] left-0 z-[-4] translate-y-[-50%]"
+        alt=""
+      />
       <div className="container">
-        <h1 className="text-white text-center font-bold text-[64px] mb-[76px]">
+        <Title className="text-white text-center mb-[30px] md:mb-[76px]">
           PSYCHEDELIC GUIDES
-        </h1>
+        </Title>
 
-        <main className="grid grid-cols-[repeat(4,_1fr)] gap-7">
+        <main className="grid sm:grid-cols-[repeat(2,_1fr)] lg:grid-cols-[repeat(4,_1fr)] gap-4 xl:gap-7">
           <GuideCard img={img1} title="2C-B" />
           <GuideCard img={img2} title="4-Aco-DMT" />
           <GuideCard img={img3} title="5-MEO-DMT" />

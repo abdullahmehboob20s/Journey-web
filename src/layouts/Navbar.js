@@ -1,16 +1,46 @@
 import OutsideClickDetector from "hooks/OutsideClickDetector";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GrFormClose } from "react-icons/gr";
 import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const sidebarRef = OutsideClickDetector(() => setIsOpen(false));
 
+  React.useEffect(() => {
+    const handler = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    document.addEventListener("scroll", handler);
+
+    return () => {
+      document.removeEventListener("scroll", handler);
+    };
+  });
+
   return (
-    <div className="fixed top-0 left-0 w-full z-[100]">
-      <div className="container py-7 flex items-center justify-between">
-        <div className="flex text-[10px] lg:text-[12px] xl:text-[16px] items-center">
+    <div
+      className={`fixed flex items-center top-0 left-0 w-full z-[80] transition-all duration-[.3s] ease-[ease] ${
+        isScrolled
+          ? "bg-gray-primary h-[70px] sm:h-[100px] shadow-[0_2px_10px_rgba(255,255,255,0.1)]"
+          : "h-[100px] sm:h-[120px]"
+      }`}
+    >
+      <div className="container flex items-center justify-between">
+        <div
+          className={`flex  items-center transition-all duration-[.3s] ease-[ease]  ${
+            isScrolled
+              ? "text-[8px] lg:text-[10px] xl:text-[14px]"
+              : "text-[10px] lg:text-[12px] xl:text-[16px]"
+          }`}
+        >
           <p className="font-merienda text-[3em] font-bold">The</p>
           <p className="font-merienda text-[3em] font-bold pl-4 text-gradient">
             journey
@@ -18,10 +48,8 @@ function Navbar() {
         </div>
 
         <div
-          className={`fixed top-0 right-0 w-[300px] p-8 translate-x-[300px] ${
-            isOpen ? "translate-x-[0px]" : ""
-          } transition-all duration-[.3s] ease-[ease] lg:translate-x-0 space-y-5 lg:space-y-0 lg:p-0 h-full lg:h-auto bg-white lg:bg-transparent lg:w-fit lg:static lg:flex lg:space-x-[36px] xl:space-x-[100px] lg:items-center 
-          z-[110] 
+          className={`fixed top-0 right-0 w-[300px] p-8 translate-x-[300px] transition-all duration-[.3s] ease-[ease] lg:translate-x-0 space-y-5 lg:space-y-0 lg:p-0 lg:h-auto bg-white lg:bg-transparent lg:w-fit lg:static lg:flex lg:space-x-[36px] xl:space-x-[100px] lg:items-center 
+          z-[110] h-full ${isOpen ? "translate-x-[0px] " : ""}
           `}
           ref={sidebarRef}
         >

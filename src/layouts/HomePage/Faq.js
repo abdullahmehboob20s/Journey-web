@@ -1,17 +1,18 @@
 import Accordion from "components/Accordion";
+import Title from "components/Title";
 import React from "react";
 
 function Faq() {
   return (
-    <div className="py-[50px] pb-0">
-      <div className="container bg-[#0F172A] py-[86px] rounded-tl-[54px] rounded-tr-[54px]">
-        <h1 className="text-white text-center font-bold text-[64px] mb-[50px] leading-normal">
+    <div className="bg-[#0F172A] sm:bg-transparent">
+      <div className="container sm:bg-[#0F172A] py-[50px] sm:py-[86px] sm:rounded-tl-[54px] sm:rounded-tr-[54px] sm:px-[2rem]">
+        <Title className="text-white text-center mb-[50px]  sm:leading-normal">
           Frequently Asked <br /> Questions
-        </h1>
+        </Title>
 
         <main className="space-y-6">
           <Accordion title="How Can I Buy a The Journey NFT?">
-            <p className="text-lg">
+            <p className="text-[14px] sm:text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur eveniet deserunt nulla, nostrum aliquid, sunt
               deleniti suscipit qui delectus dignissimos doloribus voluptatum
@@ -19,7 +20,7 @@ function Faq() {
             </p>
           </Accordion>
           <Accordion title="How Can I Buy a The Journey NFT?">
-            <p className="text-lg">
+            <p className="text-[14px] sm:text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur eveniet deserunt nulla, nostrum aliquid, sunt
               deleniti suscipit qui delectus dignissimos doloribus voluptatum
@@ -27,7 +28,7 @@ function Faq() {
             </p>
           </Accordion>
           <Accordion title="How Can I Buy a The Journey NFT?">
-            <p className="text-lg">
+            <p className="text-[14px] sm:text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur eveniet deserunt nulla, nostrum aliquid, sunt
               deleniti suscipit qui delectus dignissimos doloribus voluptatum
@@ -35,7 +36,7 @@ function Faq() {
             </p>
           </Accordion>
           <Accordion title="How Can I Buy a The Journey NFT?">
-            <p className="text-lg">
+            <p className="text-[14px] sm:text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur eveniet deserunt nulla, nostrum aliquid, sunt
               deleniti suscipit qui delectus dignissimos doloribus voluptatum
