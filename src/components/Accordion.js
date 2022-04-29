@@ -19,7 +19,7 @@ function Accordion({ title, children }) {
         className="py-[24px] sm:py-[30px] lg:py-[30px] px-[22px] sm:px-[36px] lg:px-[36px] flex items-center justify-between w-full space-x-[1rem]"
         onClick={() => setIsOpen((val) => !val)}
       >
-        <p className="text-left font-merienda text-base sm:text-[18px] xl:text-[22px] text-white font-normal">
+        <p className="text-left text-base sm:text-[18px] xl:text-[22px] text-white font-normal">
           {title}
         </p>
 

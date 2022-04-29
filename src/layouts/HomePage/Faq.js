@@ -18,7 +18,7 @@ function Faq() {
 
         <main className="space-y-6">
           <Accordion title="How Can I Buy a The Journey NFT?">
-            <p className="text-[14px] font-merienda sm:text-base lg:text-lg">
+            <p className="text-[14px] sm:text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur eveniet deserunt nulla, nostrum aliquid, sunt
               deleniti suscipit qui delectus dignissimos doloribus voluptatum
@@ -26,7 +26,7 @@ function Faq() {
             </p>
           </Accordion>
           <Accordion title="How Can I Buy a The Journey NFT?">
-            <p className="text-[14px] font-merienda sm:text-base lg:text-lg">
+            <p className="text-[14px] sm:text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur eveniet deserunt nulla, nostrum aliquid, sunt
               deleniti suscipit qui delectus dignissimos doloribus voluptatum
@@ -34,7 +34,7 @@ function Faq() {
             </p>
           </Accordion>
           <Accordion title="How Can I Buy a The Journey NFT?">
-            <p className="text-[14px] font-merienda sm:text-base lg:text-lg">
+            <p className="text-[14px] sm:text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur eveniet deserunt nulla, nostrum aliquid, sunt
               deleniti suscipit qui delectus dignissimos doloribus voluptatum
@@ -42,7 +42,7 @@ function Faq() {
             </p>
           </Accordion>
           <Accordion title="How Can I Buy a The Journey NFT?">
-            <p className="text-[14px] font-merienda sm:text-base lg:text-lg">
+            <p className="text-[14px] sm:text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur eveniet deserunt nulla, nostrum aliquid, sunt
               deleniti suscipit qui delectus dignissimos doloribus voluptatum
