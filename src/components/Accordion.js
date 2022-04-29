@@ -16,10 +16,10 @@ function Accordion({ title, children }) {
   return (
     <div className="max-w-[689px] w-full mx-auto bg-[rgba(255,_255,_255,_0.1)] rounded-[6px] sm:rounded-[18px]">
       <button
-        className="py-[24px] sm:py-[30px] lg:py-[38px] px-[22px] sm:px-[36px] lg:px-[42px] flex items-center justify-between w-full space-x-[1rem]"
+        className="py-[24px] sm:py-[30px] lg:py-[30px] px-[22px] sm:px-[36px] lg:px-[36px] flex items-center justify-between w-full space-x-[1rem]"
         onClick={() => setIsOpen((val) => !val)}
       >
-        <p className="text-left font-merienda text-base sm:text-[18px] xl:text-2xl text-white font-normal">
+        <p className="text-left font-merienda text-base sm:text-[18px] xl:text-[22px] text-white font-normal">
           {title}
         </p>
 
@@ -36,7 +36,7 @@ function Accordion({ title, children }) {
         className="h-0 overflow-hidden transition-all duration-[.3s] ease-[ease]"
         ref={menuRef}
       >
-        <div className="py-[24px] sm:py-[30px] lg:py-[38px] px-[22px] sm:px-[36px] lg:px-[42px] pt-0 ">
+        <div className="py-[24px] sm:py-[30px] lg:py-[30px] px-[22px] sm:px-[36px] lg:px-[36px] pt-0 sm:pt-0 lg:pt-0 ">
           {children}
         </div>
       </div>

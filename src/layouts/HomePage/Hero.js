@@ -14,7 +14,7 @@ function Hero() {
       />
       <div className="h-screen container flex flex-col items-center justify-center">
         <div className="max-w-[809.02px] w-full text-center">
-          <Title className="text-white text-center leading-[1.4] lg:leading-[90px] tracking-[-2px] mb-6">
+          <Title className="text-white text-center leading-[1.4] lg:leading-[60px] tracking-[-2px] mb-6">
             About <br /> The Journey
           </Title>
 

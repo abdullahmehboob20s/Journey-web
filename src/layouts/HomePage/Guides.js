@@ -32,17 +32,13 @@ function Guides() {
         className="absolute w-full h-full object-cover top-0 left-0 z-[-3]"
         alt=""
       />
-      <img
-        src={p2}
-        className="absolute w-full  object-cover top-[50%] left-0 z-[-4] translate-y-[-50%]"
-        alt=""
-      />
+
       <div className="container">
         <Title className="text-white text-center mb-[30px] md:mb-[76px]">
           PSYCHEDELIC GUIDES
         </Title>
 
-        <main className="grid sm:grid-cols-[repeat(2,_1fr)] lg:grid-cols-[repeat(4,_1fr)] gap-4 xl:gap-7">
+        <main className="grid sm:grid-cols-[repeat(2,_1fr)] lg:grid-cols-[repeat(4,_1fr)] gap-4 xl:gap-4 max-w-[1000px] w-full mx-auto">
           <GuideCard img={img1} title="2C-B" />
           <GuideCard img={img2} title="4-Aco-DMT" />
           <GuideCard img={img3} title="5-MEO-DMT" />

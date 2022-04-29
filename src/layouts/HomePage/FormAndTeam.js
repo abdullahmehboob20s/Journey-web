@@ -1,17 +1,10 @@
 import Form from "components/Form";
 import Team from "./Team";
-import bgPattren from "assets/images/form-pattren.svg";
-import blobHero from "assets/images/blob-hero.png";
+import bgPattren from "assets/images/teampattren.svg";
 
 function FormAndTeam() {
   return (
     <div className="pt-0 py-[60px] sm:py-[80px] lg:py-[100px] relative">
-      <img
-        src={blobHero}
-        className="absolute top-0 left-[-10%] z-[-1]"
-        alt=""
-      />
-
       <img
         src={bgPattren}
         className="w-full h-full object-cover absolute top-0 left-0 z-[-2]"
